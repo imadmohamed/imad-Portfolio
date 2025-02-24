@@ -4,11 +4,11 @@ import {logo} from "../assets/images"
 
 const Navbar = () => {
   return (
-  <header>
+  <header className='header'>
     <NavLink to={"/"}>
-        <img src={logo} alt="logo"/>
+        <img src={logo} alt="logo" className='w-12 h-12 object-contain' />
     </NavLink>
-        <nav>
+        <nav className='flex lext-lg gap-7 font-medium'>
             <NavLink 
             to="/about"
             className={({isActive}) => isActive ? "text-blue-600" : "text-black"
@@ -20,6 +20,6 @@ const Navbar = () => {
         </nav>
     </header>
   )
-}
+}  
 
 export default Navbar
