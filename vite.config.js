@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.glb"],
-  base: process.env.VITE_BASE_PATH
+  base: process.env.VITE_BASE_PATH || "imad-Portfolio",
 })
